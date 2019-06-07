@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import imagelist from './listofpaintings'
 import ModalImage from 'react-modal-image'
-import '../App.1.css'
+import './img.css'
 
 class Paintings extends Component {
   
@@ -11,11 +11,11 @@ class Paintings extends Component {
     const List = ({ list }) => (
         <ul>
           {list.map(item => (
-            <ModalImage style={{height:400}}
+            <ModalImage
 
               small={item.url}
               large={item.url}
-              className= 'img'
+              className= 'modal'
               alt={<p>Name: {item.name} &nbsp;&nbsp; Medium: {item.medium} &nbsp;&nbsp; Size: {item.size}</p>}
               />
           
